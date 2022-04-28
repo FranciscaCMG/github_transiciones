@@ -103,6 +103,10 @@ main {
 
 }
 
+.pedir h2:hover {
+    color:#581845;
+}
+
 h1 {
     font-family: 'Lobster', cursive;
     text-align: center;
