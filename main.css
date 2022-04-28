@@ -1,0 +1,561 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.main-wrapper {
+    display: grid;
+    grid-template-areas:  
+    "header"
+    "main"
+    "footer"
+    ;
+
+}
+
+
+/* Estilos header */
+
+.logo {
+    display: inline-block;
+    text-align: center;
+    margin-bottom:10px;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+
+}
+header {
+    /* Estilos area wrapper general */
+    grid-area: header ;
+
+    /* Estilos customs de seccion*/
+    background-color: #decac3;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Estilos navegador */
+
+.menu ul {
+    
+    list-style-type: none;
+    text-align: center;
+    width:auto;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.menu li {
+    display: inline;
+    color: #fff;
+    padding:15px;
+    font-size: 18px;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color:#fff;
+
+
+}
+.menu a:hover{
+    background-color: #955c3e;
+    color:beige;
+    padding: 5px;
+
+
+}
+
+
+/* Estilos main */
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "formulario-pedir"
+    "productos-favoritos"
+    
+    ;
+}
+
+.formulario-pedir {
+    grid-area: formulario-pedir;
+}
+
+.pedir {
+    width: 100%;
+    text-align: center;
+    padding: auto;
+    max-width: 100%;
+    background-color: white;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 20px;
+    color: #900c3f;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 24px;
+    color: #C70039;
+}
+
+h3 {
+    font-family: 'Lobster', cursive;
+    text-align: left;
+    font-size: 20px;
+    color: #581845;
+}
+
+h4 {
+    font-family: 'Lobster', cursive;
+    text-align: left;
+    font-size: 15px;
+    color: #000;
+}
+.pedir h2 {
+    padding: 1vh;
+}
+
+.pedir p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+    color: #000;
+    padding: 1px;
+}
+
+.text-pedir {
+    font-size: 30px;
+
+}
+.pedir form input {
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    border-color: #C70039;
+}
+
+.selecion-locales {
+    font-family: 'Dosis', sans-serif;
+    font-size:20px ;
+    width: 50%;
+}
+
+
+.productos-favoritos {
+    grid-area: productos-favoritos;
+
+}
+
+.productos-favoritos h2 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding: 2vh;
+}
+
+.categorias {
+    text-align: center;
+
+}
+.categoria-img  {
+    width: 100%;
+}
+
+.categoria-img a img:hover{
+    transform: translateY(10px);
+}
+
+.img-productos-fav {
+    width: auto;
+    max-width: 80%;
+}
+
+.todos-los-productos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ 
+}
+
+.productos-star {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.categorias-img{
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+
+
+}
+
+.img-categorias {
+
+    width: auto;
+    max-width: 80%;
+    padding: 1vh;
+
+}
+
+.img-categorias:hover {
+    transform: translateY(10px);
+}
+
+.historia {
+    display: flex;
+    flex-direction: column;
+}
+
+.historia div {
+
+    flex-direction: row;
+}
+
+.historia-img {
+    width: 100%;
+    flex-direction: row;
+}
+
+
+.contenido-historia p span {
+    display: none;
+}
+
+
+
+
+.video {
+    display: none;
+}
+.direccion{
+    text-align: center;
+}
+
+.direccion div {
+    display: inline-block;
+    border: 5px #000;
+    
+
+}
+
+.direccion .direccion_texto {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    color: #000;
+    text-align: center;
+
+}
+
+.direccion .direccion_texto p {
+    background-color: beige;
+    padding: 5px;
+}
+
+.direccion .direccion_texto span {
+    color: #900c3f ;
+
+}
+
+
+.politica p { 
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+    color: #000;
+    text-align: left;
+}
+
+.politica span {
+    color: #C70039;
+}
+
+.politica div {
+    text-align: center;
+}
+
+.contenedor div {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.historia div {
+   padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #faebd7;
+    
+}
+
+.historia div p {
+    padding: 10px;
+    font-family: 'Dosis', sans-serif;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.imagenes_amigas {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+
+
+iframe {
+
+    width: 100%;
+    
+}
+
+
+
+
+
+/* Estilos footer */
+
+.enlaceWsp {
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+}
+
+.suscripcion {
+    text-align: center;
+    padding: 20px;
+}
+
+.texto-suscripcion{
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+}
+
+.formulario-suscripcion input {
+    font-family: 'Dosis', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+    border-color: #C70039;
+    
+}
+
+.redes a {
+    text-decoration: none;
+    color:#C70039;
+
+
+}
+.redes a:hover{
+    background-color: #C70039;
+    color:beige;
+    padding: 5px;
+}
+
+
+.redes {
+    background-color: beige;
+    padding: 20px;
+    
+}
+
+.titulo-suscripcion {
+  
+    animation: movimiento-1 3s ease-in-out 1s infinite;
+}
+
+@keyframes movimiento-1 {
+    0%{
+        color: #C70039;
+        font-size: 34px;
+    }
+
+    25% {
+        color: #581845;
+        font-size: 38px;
+    }
+
+    75% {
+        color: #C70039;
+        font-size: 38px;
+    }
+
+    100%{
+        color: #581845;
+        font-size: 34px;
+    }
+    
+}
+
+
+.boton {
+    text-decoration: none;
+    color:#C70039;
+
+
+}
+
+.boton:hover{
+    background-color: #C70039;
+    color:beige;
+
+}
+
+
+.redes img {
+    background-color: #fff;
+}
+
+
+/* A partir de acá usamos las media quires*/
+
+
+@media screen and (min-width: 768px){
+    
+    .texto-suscripcion{
+
+        font-size: 20px;
+
+    }
+    
+    .formulario-suscripcion input {
+
+        font-size: 20px;
+    }
+
+    .video{
+        display: block;
+
+    }
+
+    .contenido-historia p span {
+        display: block;
+    }
+    
+    .titulo {
+        font-size: 50px;
+        
+    }
+
+    .pedir p {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 30px;
+
+    }
+
+    h2 {
+
+        font-size: 34px;
+
+    }
+    
+    h3 {
+
+        font-size: 30px;
+
+    }
+    
+    h4 {
+
+        font-size: 25px;
+
+    }
+
+    .politica p { 
+
+        font-size: 20px;
+
+    }
+
+    .historia div p {
+        font-size: 20px;
+    }
+
+
+    .historia div {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: #faebd7;
+
+         
+    }
+     
+    .historia div p {
+        padding: 20px;
+        font-family: 'Dosis', sans-serif;
+        text-align: justify;
+     
+    }
+     
+    .historia-img {
+        width: 33%;
+    }
+     
+
+}
+
+@media screen and (min-width: 425px){
+    .historia div p {
+        font-size: 18px;
+    }
+
+
+    .historia div {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: #faebd7;
+
+         
+    }
+     
+    .historia div p {
+
+        font-family: 'Dosis', sans-serif;
+        text-align: justify;
+     
+    }
+     
+    .historia-img {
+        width: 50%;
+    }
+     
+     
+}
